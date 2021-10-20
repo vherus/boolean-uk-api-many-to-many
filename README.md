@@ -24,15 +24,15 @@ Use `npx prisma studio` to seed data.
 Build these routes and controllers for the *Patient* resource:
   - POST `/patients` that creates a new patient and an initial related appointment
 
-Build these routes and controllers for the *Appointment* resource:
-  - GET `/appointments?practiceName=value&order=recent` that returns all appointments, with optional query params to filter by practiceName and order by most recent
-  - GET `/appointments/doctors` that returns all appointments *including* their related Doctors
-
 Build these routes and controllers for the *Doctor* resource:
   - GET `/doctors/:id/appointments` that returns the appointments for specific doctor
   - GET `/doctors/:id/practice` returns a list of places where the doctor has appointments
   - GET `/doctors/most-busy` returns the doctor with the most appointments
   - GET `/doctors/total-hours` returns the total amount of time in appontments, assuming each appointment is 30 mins
+
+Build these routes and controllers for the *Appointment* resource:
+  - GET `/appointments?practiceName=value&order=recent` that returns all appointments, with optional query params to filter by practiceName and order by most recent
+  - GET `/appointments/doctors` that returns all appointments *including* their related Doctors
 
 **Tips**
   - Use the Prisma docs extensively
