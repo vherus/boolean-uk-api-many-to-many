@@ -9,6 +9,7 @@ Build GET routes & controllers, with one POST to create a patient with an initia
   - Download this template .ZIP and extract it, then open it in VS Code: https://github.com/vherus/boolean-uk-api-many-to-many/archive/refs/heads/main.zip
   - Rename `.env_example` to `.env`
   - Create a new database in ElephantSQL (you can use your previous shadow db), then update the `.env` with the correct URL's
+  - Run `npx prisma migrate dev --name init`
   - Add the relationships defined below to the models in `./prisma/schema.prisma`
   - Run `npx prisma migrate dev --name add_relations`
   - Build the controllers and routes as instructed
